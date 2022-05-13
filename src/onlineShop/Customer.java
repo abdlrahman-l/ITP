@@ -7,12 +7,12 @@ public class Customer {
 	private Account acc;
 	private ShoppingCart sc;
 
-	public Customer(String nama, String age, String email) {
+	public Customer(String nama, String age, String email, String password) {
 		
 		this.nama = nama;
 		this.age = age;
 		this.email = email;
-		acc = new Account(email,"123",0);
+		acc = new Account(email,password,0);
 		sc = new ShoppingCart();
 	}
 	

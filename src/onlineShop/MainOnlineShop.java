@@ -115,13 +115,17 @@ public class MainOnlineShop {
 			umur=sc1.nextLine();
 			System.out.print("Email : ");
 			email=sc1.nextLine();
-			cs = new Customer(nama,umur,email);
+			System.out.print("Password : ");
+			passwd=sc1.nextLine();
+			cs = new Customer(nama,umur,email, passwd);
 			break;
 		case 3:
 			System.out.println("Debit Card balance : $"+dc.getBalance());
 			break;
 		default:
-			System.out.println("Inputan salah");
+			if (choice != 0) {
+				System.out.println("Inputan salah");
+			}
 			break;
 		
 		} }while (choice!=0);
