@@ -15,7 +15,7 @@ public class MainOnlineShop {
 		listProduct[6] = new Product("VGA",5,70);
 		listProduct[7] = new Product("CPU",10,100);
 		listProduct[8] = new Product("Speaker",4,5);
-		listProduct[9] = new Product("Headset",8,5);	
+		listProduct[9] = new Product("Headset",8,5);
 		DebitCard dc = new DebitCard(1000);
 		Customer cs = null;
 		int choice,choice1,choice2,choice3;
@@ -105,7 +105,7 @@ public class MainOnlineShop {
 				System.out.println("Thank You for visiting us");
 			}
 			else
-				System.out.println("Login gagal , password atau usenamemu salah");
+				System.out.println("Login gagal , password atau email salah");
 			break;
 		case 2:
 			System.out.println("Register");
